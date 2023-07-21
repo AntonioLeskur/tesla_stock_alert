@@ -52,7 +52,7 @@ if percentage_difference >= 5:
     article_points = [f"Headline: {news['title']}.\nArticle: {news['description']}" for news in top_3_tesla_news]
     print(article_points)
 
-    if float(yesterday_tesla_closing_price) >= float(day_before_yesterday_tesla_closing_price):
+    if float(yesterday_tesla_closing_price) >= 0:
         arrow = "🔺"
     else:
         arrow = "🔻"
